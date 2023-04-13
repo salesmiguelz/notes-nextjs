@@ -12,17 +12,17 @@ async function getNotes(){
 }
 
 export default async function NotesPage(){
-    const notes = await getNotes();
+    // const notes = await getNotes();
     return (
         <div>
             <h1>Notes</h1>
-            <div className={styles.grid}>
+            {/* <div className={styles.grid}>
             {
                 notes?.map((note) => {
                     return <Note key={note.id} note={note} />;
                 })
             }
-            </div>
+            </div> */}
             <CreateNote/>
         </div>
 
